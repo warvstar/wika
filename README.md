@@ -21,3 +21,19 @@ wika is tool to build languages on the web
 * Does it make sense to compile to dynamic (lua? typescript?)
 
 ### Ideas of how it could work
+![Alt text](./wika.svg)
+<img src="./wika.svg">
+
+```
+function ::= def '(' [parlist] ')' [block]
+    visit  -> emitMLIR(...)
+    error_not(')') -> print('Bad syntax; Did you forget ')'?')
+
+block ::= `{´ [statement] `}´
+    error_not('}') -> print('Bad syntax; Did you forget '}'?')
+
+<IP Address> ::= <NODE> "." <NODE> “.” <NODE> “.” <NODE>
+    error_not(<NODE>) -> print('Bad syntax; <NODE> should be between 0 and 255')
+
+<NODE> ::= 000 to 255
+```
