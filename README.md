@@ -25,7 +25,8 @@ wika is tool to build languages on the web
 
 ### Additional notes
 * LLVM library is the largest optional component, at 5mb using compression. Not ideal, see if possible to shrink this down by removing functionality not needed for this project.
-* MLIR takes under 800kb compressed
+* To use MIR, we would want to compile as in the diagram directly from MLIR -> MIR, so would need to add this lowering pass
+* To compile to WebAssembly without first been lowered to one of the IRs in the diagram, we would need to add a lowering pass MLIR -> WebAssembly
 
 ### Ideas of how it could work
 <img src="./wika.svg">
