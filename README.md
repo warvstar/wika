@@ -21,7 +21,6 @@ wika is tool to build languages on the web
 * Does it make sense to compile to dynamic (lua? typescript?)
 
 ### Ideas of how it could work
-![Alt text](./wika.svg)
 <img src="./wika.svg">
 
 ```
