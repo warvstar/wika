@@ -11,6 +11,8 @@ wika is tool to build languages on the web
 * Can add optimization passes to any step
 * Can compile to multiple targets including (spirv, wasm, x86-64, ARM64)
 * Show every step of code transformation in real time
+* Interpreters for LLVM IR, WASM
+* Generate dwarf debug info, that can work inside the browser as well
 
 ### Tools considering to use for this project
 * MLIR - this one seems like the obvious choice for the initial target for the source language
@@ -20,6 +22,10 @@ wika is tool to build languages on the web
 
 ### Questions
 * Does it make sense to compile to dynamic (lua? typescript?)
+
+### Additional notes
+* LLVM library is the largest optional component, at 5mb using compression. Not ideal, see if possible to shrink this down by removing functionality not needed for this project.
+* MLIR takes under 800kb compressed
 
 ### Ideas of how it could work
 <img src="./wika.svg">
