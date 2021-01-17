@@ -10,6 +10,7 @@ wika is tool to build languages on the web
 * Can setup multiple conversion paths
 * Can add optimization passes to any step
 * Can compile to multiple targets including (spirv, wasm, x86-64, ARM64)
+* Show every step of code transformation in real time
 
 ### Tools considering to use for this project
 * MLIR - this one seems like the obvious choice for the initial target for the source language
